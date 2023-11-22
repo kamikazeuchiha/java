@@ -1,5 +1,5 @@
 const frm = document.querySelector("form")
-const respo = document.querySelector("h4")
+const resp = document.querySelector("h4")
 
 frm.addEventListener("submit", (e) => {
     e.preventDefault()
@@ -12,7 +12,7 @@ frm.addEventListener("submit", (e) => {
         } else {
             resultado = pessoas * 20
         }
-    resp.innerText = `N de pessoas:${pessoas}\n
-                     N de peixe:${peixe}\n
+    resp.innerText = `Numero de pessoas:${pessoas}\n
+                     Numero de peixe:${peixe}\n
                      Pagar: R$ ${resultado.toFixed(2)}`
 })
